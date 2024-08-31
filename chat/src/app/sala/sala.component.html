@@ -1,0 +1,17 @@
+<div class="container mt-3" style="border: solid 2px red;">
+    <h3>Sala de Chat</h3>
+    <h5><b>Conversación</b></h5>
+    @for (mensaje of listaMensajes; track $index) {
+        <p>{{mensaje}} : {{mensaje}} </p>
+    }
+    <div class="row">
+        <div class="col">
+            <app-usuario [nombreUsuario]="usuario1"  ></app-usuario>
+        </div>
+        <div class="col" >
+            <app-usuario [nombreUsuario]="usuario2" ></app-usuario>
+        </div>
+    </div>
+
+</div>
+
